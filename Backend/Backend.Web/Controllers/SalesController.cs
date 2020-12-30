@@ -17,9 +17,9 @@ namespace Backend.Web.Controllers
         }
 
         [HttpGet("getallsales")]
-        public async Task<OkObjectResult> GetSalesDataRange()
+        public async Task<OkObjectResult> GetSalesDataRange([FromQuery] string fromDate, [FromQuery] string toDate)
         {
-            string sales = service.GetSalesBetweenRange("", "");
+            string sales = service.GetSalesBetweenRange(fromDate, toDate);
             return Ok(sales);
         }
     }

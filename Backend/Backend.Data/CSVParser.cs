@@ -16,6 +16,7 @@ namespace Backend.Data
         }
         private void readCSV()
         {
+            _st = new SalesTable();
             using (StreamReader sr = new StreamReader(filePath))
             {
                 string[] headers = sr.ReadLine().Split(';');

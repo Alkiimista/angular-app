@@ -13,6 +13,7 @@ import { MatCardModule } from '@angular/material/card';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { HttpClientModule } from '@angular/common/http'
+import { RevenueService } from 'src/app/services/revenue.service';
 
 
 
@@ -31,6 +32,9 @@ import { HttpClientModule } from '@angular/common/http'
     MatCardModule,
     FlexLayoutModule,
     HttpClientModule
+  ],
+  providers: [
+    RevenueService
   ]
 })
 export class DefaultModule { }

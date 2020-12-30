@@ -1,3 +1,6 @@
-<p>dashboard</p>
-<app-widget-datepicker></app-widget-datepicker>
-<app-widget-area></app-widget-area>
+<div>
+    <app-widget-datepicker (dateChanged)="redraw($event)"></app-widget-datepicker>
+    <ng-container *ngIf="!loading">
+        <app-widget-area [sales]="sales"></app-widget-area>
+    </ng-container>
+</div>

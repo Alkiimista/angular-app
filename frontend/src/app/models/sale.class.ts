@@ -11,3 +11,12 @@ export class Sale {
         this.date = date;
     }
 }
+
+export function mapSales(item: any): Sale{
+    return new Sale(
+        item.Product,
+        item.Price,
+        item.Quantity,
+        item.Date,
+    );
+}

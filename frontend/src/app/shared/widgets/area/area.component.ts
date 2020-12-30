@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import * as Highcharts from 'highcharts';
+import { Sale } from 'src/app/models/sale.class';
 
 @Component({
   selector: 'app-widget-area',
@@ -8,6 +9,7 @@ import * as Highcharts from 'highcharts';
 })
 export class AreaComponent implements OnInit {
 
+  @Input() sales!: Sale[];
   
   Highcharts = Highcharts;
   chartOptions!: {};

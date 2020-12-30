@@ -6,6 +6,14 @@ import { AboutComponent } from 'src/app/modules/about/about.component';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from 'src/app/shared/shared.module';
 
+import { MatSidenavModule} from '@angular/material/sidenav';
+import { MatDividerModule} from '@angular/material/divider';
+import { MatCardModule } from '@angular/material/card';
+
+import { FlexLayoutModule } from '@angular/flex-layout';
+
+import { HttpClientModule } from '@angular/common/http'
+
 
 
 @NgModule({
@@ -17,7 +25,12 @@ import { SharedModule } from 'src/app/shared/shared.module';
   imports: [
     CommonModule,
     RouterModule,
-    SharedModule
+    SharedModule,
+    MatSidenavModule,
+    MatDividerModule,
+    MatCardModule,
+    FlexLayoutModule,
+    HttpClientModule
   ]
 })
 export class DefaultModule { }

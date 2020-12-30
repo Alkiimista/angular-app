@@ -28,8 +28,14 @@ namespace Backend.Services
         {
             string filter1 = filteredData(fromDate, toDate, "Teddybear");
 
-            // This introduced unneccesary \ characters
-            //string jsonObj = JsonConvert.SerializeObject(filter1);
+            //TODO make use of filtereddata
+            /* ex.
+             *  string filter1 = filteredData(fromDate, toDate, "Teddybear")
+             *  string filter2 = filteredData(fromDate, toDate, "Chair")
+             *  string filter3 = filteredData(fromDate, toDate, "Lamp")
+             *  string filter4 = filteredData(fromDate, toDate, "Table")
+             *  serialize all those filters into a json
+             */
 
             return filter1;
         }

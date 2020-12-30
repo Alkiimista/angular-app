@@ -1,0 +1,12 @@
+F:\Projects\angular-app\Backend\Backend.Services\bin\Debug\netcoreapp3.1\Backend.Services.deps.json
+F:\Projects\angular-app\Backend\Backend.Services\bin\Debug\netcoreapp3.1\Backend.Services.dll
+F:\Projects\angular-app\Backend\Backend.Services\bin\Debug\netcoreapp3.1\Backend.Services.pdb
+F:\Projects\angular-app\Backend\Backend.Services\bin\Debug\netcoreapp3.1\Backend.Data.dll
+F:\Projects\angular-app\Backend\Backend.Services\bin\Debug\netcoreapp3.1\Backend.Data.pdb
+F:\Projects\angular-app\Backend\Backend.Services\obj\Debug\netcoreapp3.1\Backend.Services.csprojAssemblyReference.cache
+F:\Projects\angular-app\Backend\Backend.Services\obj\Debug\netcoreapp3.1\Backend.Services.AssemblyInfoInputs.cache
+F:\Projects\angular-app\Backend\Backend.Services\obj\Debug\netcoreapp3.1\Backend.Services.AssemblyInfo.cs
+F:\Projects\angular-app\Backend\Backend.Services\obj\Debug\netcoreapp3.1\Backend.Services.csproj.CoreCompileInputs.cache
+F:\Projects\angular-app\Backend\Backend.Services\obj\Debug\netcoreapp3.1\Backend.Services.csproj.CopyComplete
+F:\Projects\angular-app\Backend\Backend.Services\obj\Debug\netcoreapp3.1\Backend.Services.dll
+F:\Projects\angular-app\Backend\Backend.Services\obj\Debug\netcoreapp3.1\Backend.Services.pdb

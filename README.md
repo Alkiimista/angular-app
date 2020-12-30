@@ -4,6 +4,12 @@ A small dashboard that displays data in highcharts
 
 ![Image of Dashboard](https://github.com/Alkiimista/angular-app/blob/main/dashboard.png)
 
+## Usage
+Make sure the front-end and back-end are running.
+
+Select a date range between 2018-01-01 and 2018-12-31 and press submit.
+It will then display a chart with values from the backend.
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.

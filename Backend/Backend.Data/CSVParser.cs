@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Backend.Data
 {
-    class CSVParser
+    public class CSVParser
     {
         private string filePath = "../sales.csv";
         private SalesTable _st = null;
@@ -54,9 +54,12 @@ namespace Backend.Data
                 }
             }
 
-            Console.WriteLine("Parsed CSV");
+            //Console.WriteLine("Parsed CSV");
+        }
+        
+        public SalesTable GetSalesTable()
+        {
+            return _st;
         }
     }
-
-
 }

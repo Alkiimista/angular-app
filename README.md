@@ -74,7 +74,5 @@ The backend is now running on
 localhost:5000
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
-
 ## License
 todo

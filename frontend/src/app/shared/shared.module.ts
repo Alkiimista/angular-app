@@ -20,6 +20,14 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    HeaderComponent,
+    FooterComponent,
+    SidebarComponent,
+    AreaComponent,
+    ColumnComponent,
+    DatepickerComponent
   ]
 })
 export class SharedModule { }

@@ -10,21 +10,17 @@ import { HeaderComponent } from './shared/components/header/header.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { SidebarComponent } from './shared/components/sidebar/sidebar.component';
 import { AboutComponent } from './modules/about/about.component';
+import { DefaultModule } from './layouts/default/default.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    DefaultComponent,
-    DashboardComponent,
-    HeaderComponent,
-    FooterComponent,
-    SidebarComponent,
-    AboutComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    DefaultModule
   ],
   providers: [],
   bootstrap: [AppComponent]

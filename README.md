@@ -67,18 +67,3 @@ End with an example of getting some data out of the system or using it for a lit
 
 ## License
 todo
-
-Image
-
-Installation instructions
-1. Download the project
-2. Open a console (cmd)
-3. Navigate to the project folder using the console
-4. cd frontend
-5. npm install
-6. ng serve
-
-7. open another console
-8. navigate to the project folder using the console
-9. cd Backend/Backend.web
-10. dotnet run

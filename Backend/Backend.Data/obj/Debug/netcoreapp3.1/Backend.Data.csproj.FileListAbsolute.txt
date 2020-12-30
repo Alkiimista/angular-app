@@ -1,0 +1,9 @@
+F:\Projects\angular-app\Backend\Backend.Data\bin\Debug\netcoreapp3.1\Backend.Data.deps.json
+F:\Projects\angular-app\Backend\Backend.Data\bin\Debug\netcoreapp3.1\Backend.Data.dll
+F:\Projects\angular-app\Backend\Backend.Data\bin\Debug\netcoreapp3.1\Backend.Data.pdb
+F:\Projects\angular-app\Backend\Backend.Data\obj\Debug\netcoreapp3.1\Backend.Data.csprojAssemblyReference.cache
+F:\Projects\angular-app\Backend\Backend.Data\obj\Debug\netcoreapp3.1\Backend.Data.AssemblyInfoInputs.cache
+F:\Projects\angular-app\Backend\Backend.Data\obj\Debug\netcoreapp3.1\Backend.Data.AssemblyInfo.cs
+F:\Projects\angular-app\Backend\Backend.Data\obj\Debug\netcoreapp3.1\Backend.Data.csproj.CoreCompileInputs.cache
+F:\Projects\angular-app\Backend\Backend.Data\obj\Debug\netcoreapp3.1\Backend.Data.dll
+F:\Projects\angular-app\Backend\Backend.Data\obj\Debug\netcoreapp3.1\Backend.Data.pdb

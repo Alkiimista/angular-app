@@ -4,11 +4,11 @@ using System.Text;
 
 namespace Backend.Services
 {
-    class SaleService : ISaleService
+    public class SaleService : ISaleService
     {
         public string GetSalesBetweenRange(string fromDate, string toDate)
         {
-            throw new NotImplementedException();
+            return "Parsed CSV";
         }
     }
 }

@@ -41,3 +41,7 @@ F:\Projects\angular-app\Backend\Backend.Web\obj\Debug\net5.0\Backend.Web.dll
 F:\Projects\angular-app\Backend\Backend.Web\obj\Debug\net5.0\ref\Backend.Web.dll
 F:\Projects\angular-app\Backend\Backend.Web\obj\Debug\net5.0\Backend.Web.pdb
 F:\Projects\angular-app\Backend\Backend.Web\obj\Debug\net5.0\Backend.Web.genruntimeconfig.cache
+F:\Projects\angular-app\Backend\Backend.Web\bin\Debug\net5.0\Backend.Data.dll
+F:\Projects\angular-app\Backend\Backend.Web\bin\Debug\net5.0\Backend.Services.dll
+F:\Projects\angular-app\Backend\Backend.Web\bin\Debug\net5.0\Backend.Services.pdb
+F:\Projects\angular-app\Backend\Backend.Web\bin\Debug\net5.0\Backend.Data.pdb

@@ -1,24 +1,22 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Cors;
 
 namespace Backend.Web.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    class SalesController : ControllerBase
+    [EnableCors("policy1")]
+    public class SalesController : ControllerBase
     {
         public SalesController()
         {
-
         }
 
-        public string GetAllSalesFromDataRange()
-        {
-            return "Sales";
+        [HttpGet("getallsales")]
+        public async Task<OkObjectResult> GetSalesDataRange()
+        { 
+            return Ok("Sale");
         }
     }
 }

@@ -16,6 +16,9 @@ namespace Backend.Web
 {
     public class Startup
     {
+        // allow everything from angular frontend
+        readonly string MyAllowSpecificOrigins = "http://localhost:4200";
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -32,6 +35,17 @@ namespace Backend.Web
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Backend.Web", Version = "v1" });
             });
+            services.AddCors(options =>
+            {
+                options.AddPolicy("policy1",
+                                  builder =>
+                                  {
+                                      builder.AllowAnyOrigin();
+                                      builder.AllowAnyMethod();
+                                      builder.AllowAnyHeader();
+                                  });
+            });
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -49,6 +63,8 @@ namespace Backend.Web
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseCors(MyAllowSpecificOrigins);
 
             app.UseEndpoints(endpoints =>
             {

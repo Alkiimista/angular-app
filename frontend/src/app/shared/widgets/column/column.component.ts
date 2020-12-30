@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-column',
+  selector: 'app-widget-column',
   templateUrl: './column.component.html',
   styleUrls: ['./column.component.scss']
 })

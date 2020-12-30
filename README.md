@@ -2,13 +2,18 @@
 
 A small dashboard that displays data in highcharts
 
+![Image of Dashboard](https://github.com/Alkiimista/angular-app/blob/main/dashboard.png)
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
-Node [https://nodejs.org/en/]
-.NET Core [https://dotnet.microsoft.com/download]
+[Node](https://nodejs.org/en/)
+
+[.NET Core](https://dotnet.microsoft.com/download)
+
+[Angular](https://angular.io/guide/setup-local)
 
 ### Installing
 

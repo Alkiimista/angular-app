@@ -46,7 +46,7 @@ namespace Backend.Services
         {
             DataView dv = _salesTable.AsDataView();
             dv.Sort = "Date asc";
-            //dv.RowFilter = $"Date >= #{fromDate}# AND Date <= #{toDate}# AND Product = '{productName}'";
+            dv.RowFilter = $"Date >= #{fromDate}# AND Date <= #{toDate}#";
 
             DataTable sortedTable = dv.ToTable();
 

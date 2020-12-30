@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import * as Highcharts from 'highcharts';
+import * as moment from 'moment';
 import { Sale } from 'src/app/models/sale.class';
 
 @Component({
@@ -46,22 +47,7 @@ export class AreaComponent implements OnInit {
             turboThreshold: 10000
           }
       },
-      series: [{
-            name: 'Asia',
-            data: [502, 635, 809, 947, 1402, 3634, 5268]
-        }, {
-            name: 'Africa',
-            data: [106, 107, 111, 133, 221, 767, 1766]
-        }, {
-            name: 'Europe',
-            data: [163, 203, 276, 408, 547, 729, 628]
-        }, {
-            name: 'America',
-            data: [18, 31, 54, 156, 339, 818, 1201]
-        }, {
-            name: 'Oceania',
-            data: [2, 2, 2, 6, 13, 30, 46]
-    }]
+      series: this.appoint(this.sales)
     };
 
     setTimeout(() => {
@@ -70,8 +56,32 @@ export class AreaComponent implements OnInit {
       );
     }, 300);
     
-
     
+  }
+
+  appoint(mapData: any) {
+    const newArray = [];
+
+    for (const data of mapData) {
+        // check if there are existing items in the array.
+        const index = newArray.findIndex(object => object.name === data.product);
+        if (index > -1) {
+            newArray[index].data.push([
+                moment(data.date).format("YYYY-MM-DD"),
+                data.price
+            ]);
+        } else {
+            newArray.push({
+                name: data.product,
+                data: [[
+                    moment(data.date).format("YYYY-MM-DD"),
+                    data.price
+                ]
+              ]
+            });
+        }
+    }
+    return newArray;
   }
 
 }

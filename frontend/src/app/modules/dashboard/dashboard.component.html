@@ -1,0 +1,6 @@
+<div>
+    <app-widget-datepicker (dateChanged)="redraw($event)"></app-widget-datepicker>
+    <ng-container *ngIf="!loading">
+        <app-widget-area [sales]="sales"></app-widget-area>
+    </ng-container>
+</div>

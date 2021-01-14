@@ -10,16 +10,16 @@ namespace Backend.Web.Controllers
     [EnableCors("policy1")]
     public class SalesController : ControllerBase
     {
-        SaleService service;
-        public SalesController()
+        readonly ISaleService _saleService;
+        public SalesController([FromServices] ISaleService saleService)
         {
-            service = new SaleService();
+            _saleService = saleService;
         }
 
         [HttpGet("getallsales")]
         public async Task<OkObjectResult> GetSalesDataRange([FromQuery] string fromDate, [FromQuery] string toDate)
         {
-            string sales = service.GetSalesBetweenRange(fromDate, toDate);
+            string sales = _saleService.GetSalesBetweenRange(fromDate, toDate);
             return Ok(sales);
         }
     }
